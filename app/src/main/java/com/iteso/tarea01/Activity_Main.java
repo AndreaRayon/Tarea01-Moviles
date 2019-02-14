@@ -46,7 +46,7 @@ public class Activity_Main extends AppCompatActivity {
                     "\nTelefono: " + phone.getText() +
                     "\nEscolaridad: " + spinner.getSelectedItem().toString() +
                     "\nGénero : " + rb.getText() +
-                    (actv.getText().length() > 0 ? "Libro Favorito:" + actv.getText() : "") +
+                    (actv.getText().length() > 0 ? "\nLibro Favorito:" + actv.getText() : "\n") +
                     "\nPractica Deporte: " + (cb.isChecked() ? "Si" : "No");
         }
     }

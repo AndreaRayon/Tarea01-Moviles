@@ -61,14 +61,16 @@
             android:layout_height="wrap_content"
             android:text="@string/fem"
             android:layout_weight="1"
-            android:checked="true" />
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
         <RadioButton
             android:id="@+id/man"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/man"
             android:layout_weight="1"
-            android:checked="false"/>
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"/>
         </RadioGroup>
 
         <TextView
@@ -98,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:text="@string/clean"/>
+            android:text="@string/clean"
+            android:onClick="onButtonClicked"/>
 
 </LinearLayout>
