@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tarea01</string>
+    <string name="input_name">Ingrese su nombre</string>
+    <string name="input_phone">Ingrese su teléfono</string>
+    <string name="label_degree">Escolaridad</string>
+    <string name="label_sex">Género</string>
+    <string name="fem">Femenino</string>
+    <string name="man">Masculino</string>
+    <string name="books">Libro Favorito</string>
+    <string name="hint_book">Escribe el nombre de un libro</string>
+    <string name="sport">Practíca Deporte</string>
+    <string name="clean">Limpiar</string>
+    <string name="save">Guardar</string>
+
+    <string-array name="escolaridad">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string-array name="book_list">
+        <item>El juego del ángel</item>
+        <item>La sombra del viento</item>
+        <item>Harry Potter y la cámara de los secretos</item>
+        <item>Wonder</item>
+        <item>Harry Potter y la piedra filosofal</item>
+        <item>La ladrona de los libros</item>
+        <item>Deja de ser tu</item>
+    </string-array>
+</resources>
