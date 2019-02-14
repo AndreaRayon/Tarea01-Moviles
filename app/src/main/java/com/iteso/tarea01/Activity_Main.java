@@ -19,7 +19,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Activity_Main extends AppCompatActivity {
-    Alumno alumno;
     AutoCompleteTextView autoCompleteTextView;
     Spinner spinner;
     RadioButton radioButton;
@@ -57,11 +56,11 @@ public class Activity_Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__main);
 
-        name = (EditText) findViewById(R.id.name);
-        phone = (EditText) findViewById(R.id.phone);
-        checkBox = (CheckBox) findViewById(R.id.sport);
-        radioButton = (RadioButton) findViewById(R.id.fem);
-        spinner = (Spinner) findViewById(R.id.spinner);
+        name = findViewById(R.id.name);
+        phone = findViewById(R.id.phone);
+        checkBox = findViewById(R.id.sport);
+        radioButton = findViewById(R.id.fem);
+        spinner = findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.escolaridad, android.R.layout.simple_spinner_item);
@@ -87,7 +86,7 @@ public class Activity_Main extends AppCompatActivity {
 
     public void onButtonClicked(View view) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setMessage( "¿Desea limpiar?");
+        alertDialog.setMessage( "¿Desea limpiar el contenido?");
         alertDialog.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -123,7 +122,7 @@ public class Activity_Main extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.activity_main_menu, menu);
         return true;
-        
+
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
